@@ -42,7 +42,7 @@ export const POOLS = [
   // Wormhole:
   lp('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
   //Jupiter: 
-  lp('GYKVNggEyrunSi8pyNvSw3g6uhDWGVa4xpJUwxVnX441'),
+  lp('JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN'),
 
 ]
 
