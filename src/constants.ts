@@ -41,8 +41,6 @@ export const POOLS = [
   lp('BgFhv7WXJameaDeuwW5aSSGYyi6MpxE8yfyC2jYEssyy'),
   // Wormhole:
   lp('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
-  //jupiter:
-  lp('GYKVNggEyrunSi8pyNvSw3g6uhDWGVa4xpJUwxVnX441'),
 ]
 
 // The default token to be selected
@@ -78,14 +76,6 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
   image: "https://static.jup.ag/jup/metadata.json", 
    decimals: 6, 
    basewager: 1 *1e6,
-   usdprice: 0,
-  }
-  {
-    mint: new PublicKey("So11111111111111111111111111111111111111112"),
-  symbol: 'SOL', 
-  name: 'Wrapped SOL',
-   decimals: 9, 
-   basewager: 1 *1e9,
    usdprice: 0,
   }
 ]
