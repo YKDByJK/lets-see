@@ -41,8 +41,6 @@ export const POOLS = [
   lp('BgFhv7WXJameaDeuwW5aSSGYyi6MpxE8yfyC2jYEssyy'),
   // Wormhole:
   lp('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
-  //Jupiter: 
-  lp('JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN'),
 
 ]
 
@@ -72,15 +70,7 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     decimals: 6,
     usdPrice: 0,
   },
-  {
-    mint: new PublicKey("JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN"),
-  symbol: 'JUP', 
-  name: 'Jupiter',
-  image: "https://static.jup.ag/jup/metadata.json", 
-   decimals: 6, 
-   basewager: 1 *1e6,
-   usdprice: 0,
-  }
+
 ]
 
 /**
