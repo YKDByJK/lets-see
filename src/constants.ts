@@ -42,8 +42,8 @@ export const POOLS = [
   // Wormhole:
   lp('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
   //Jupiter: 
-  lp('JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN'),
-  
+  lp('GYKVNggEyrunSi8pyNvSw3g6uhDWGVa4xpJUwxVnX441'),
+
 ]
 
 // The default token to be selected
