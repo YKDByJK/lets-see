@@ -146,7 +146,7 @@ export default function HiLo(props: HiLoConfig) {
                     >
                       <Card>
                         <div className="rank">{RANK_SYMBOLS[card.rank]}</div>
-                        <div className="suit" style={{ backgroundImage: 'url(' + props.logo +  ')' }} />
+                        
                       </Card>
                     </CardContainer>
                   )
