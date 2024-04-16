@@ -78,7 +78,8 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     symbol: 'JUP', 
     image: 'https://static.jup.ag/jup/icon.png',
     baseWager: 1e6, 
-    decimals: 6, 
+    decimals: 6,
+    usdprice: 0, 
   },
 
 ]
