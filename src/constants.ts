@@ -76,7 +76,7 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     mint: new PublicKey('JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN'), 
     Name:'Jupiter',
     symbol: 'JUP', 
-    image: 'https://static.jup.ag/jup/icon.png'
+    image: 'https://static.jup.ag/jup/icon.png',
     baseWager: 1e6, 
     decimals: 6, 
   },
