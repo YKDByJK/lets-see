@@ -1,21 +1,21 @@
 {
-	"name": "Gamba Play",
-	"short_name": "Gamba",
-	"start_url": "/",
+	"name": "YKD Games",
+	"short_name": "YKD",
+	"start_url": "ykdgames.com",
 	"display": "standalone",
 	"background_color": "#000000",
 	"lang": "en",
 	"scope": "/",
 	"theme_color": "#FF5555",
-	"description": "",
+	"description": "This is the officail Online Solana casino for the brand YKDByJK, check out the twitter @YonderKidDream",
 	"icons": [
 		{
-			"src": "/icon-512.png",
+			"src": "/ykdgames.png",
 			"sizes": "512x512",
 			"type": "image/png"
 		},
 		{
-			"src": "/icon-192.png",
+			"src": "/ykdgames.png",
 			"sizes": "192x192",
 			"type": "image/png"
 		}
