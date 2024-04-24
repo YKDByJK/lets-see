@@ -58,6 +58,7 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     mint: new PublicKey('BgFhv7WXJameaDeuwW5aSSGYyi6MpxE8yfyC2jYEssyy'),
     name: 'YonderKidDreams',
     symbol: 'YKD',
+    image: 'https://ibb.co/MPNHqFr',
     baseWager: 1e6,
     decimals: 6,
     usdPrice: 0,
