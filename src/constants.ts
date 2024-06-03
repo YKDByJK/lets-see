@@ -1,3 +1,4 @@
+
 import { PublicKey } from '@solana/web3.js'
 import { FAKE_TOKEN_MINT, PoolToken, TokenMeta, makeHeliusTokenFetcher } from 'gamba-react-ui-v2'
 
@@ -6,17 +7,17 @@ export const RPC_ENDPOINT = import.meta.env.VITE_RPC_ENDPOINT ?? 'https://mainne
 
 // Solana address that will receive fees when somebody plays on this platform
 export const PLATFORM_CREATOR_ADDRESS = new PublicKey(
-  'HvX1mNoVH7EaqB6KDdgzsHageuNBvbgrpPvnNcEpcTva'
+  'VHvX1mNoVH7EaqB6KDdgzsHageuNBvbgrpPvnNcEpcTva',
 )
 
 // Gamba explorer URL - Appears in RecentPlays
-export const EXPLORER_URL = `https://explorer.gamba.so/`;
+export const EXPLORER_URL = 'https://explorer.gamba.so'
 
 // Platform URL - Appears in ShareModal
 export const PLATFORM_SHARABLE_URL = 'ykdgames.com'
 
 // Creator fee (in %)
-export const PLATFORM_CREATOR_FEE = 0.05 // 1% (1/100 = 0.01)
+export const PLATFORM_CREATOR_FEE = 0.05 // 1% (1/100 = 0.01)  !!max 5%!!
 
 // Jackpot fee (in %)
 export const PLATFORM_JACKPOT_FEE = 0.05 // 0.1% (0.1/100 = 0.001)
@@ -33,17 +34,17 @@ const lp = (tokenMint: PublicKey | string, poolAuthority?: PublicKey | string): 
  * For private pools, add the creator of the Liquidity Pool as a second argument
  */
 export const POOLS = [
+  // Fake token:
+  lp(FAKE_TOKEN_MINT),
   // SOL:
   lp('So11111111111111111111111111111111111111112'),
   // USDC:
   lp('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'),
-  // YKD token:
-  lp('BgFhv7WXJameaDeuwW5aSSGYyi6MpxE8yfyC2jYEssyy'),
   // Wormhole:
   lp('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
-  
+  // YKD token:
+  lp('BgFhv7WXJameaDeuwW5aSSGYyi6MpxE8yfyC2jYEssyy'),
   lp ('JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN'),
-
 ]
 
 // The default token to be selected
@@ -55,12 +56,12 @@ export const DEFAULT_POOL = POOLS[0]
  */
 export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
   {
-    mint: new PublicKey('BgFhv7WXJameaDeuwW5aSSGYyi6MpxE8yfyC2jYEssyy'),
-    name: 'YonderKidDreams',
-    symbol: 'YKD',
-    image: 'https://bafybeig5gxz42kgjncnaerrypi3gywubgszbkawo6ndmi5cs7eegw7b4q4.ipfs.nftstorage.link/',
-    baseWager: 1e6,
-    decimals: 6,
+    mint: FAKE_TOKEN_MINT,
+    name: 'Fake',
+    symbol: 'FAKE',
+    image: '/fakemoney.png',
+    baseWager: 1e9,
+    decimals: 9,
     usdPrice: 0,
   },
   {
@@ -68,7 +69,16 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     name: 'W',
     symbol: 'Wormhole',
     image: 'https://wormhole.com/token.png',
-    baseWager: 1e7,
+    baseWager: 1e6,
+    decimals: 6,
+    usdPrice: 0,
+  },
+  {
+    mint: new PublicKey('BgFhv7WXJameaDeuwW5aSSGYyi6MpxE8yfyC2jYEssyy'),
+    name: 'YonderKidDreams',
+    symbol: 'YKD',
+    image: 'https://bafybeig5gxz42kgjncnaerrypi3gywubgszbkawo6ndmi5cs7eegw7b4q4.ipfs.nftstorage.link/',
+    baseWager: 1e6,
     decimals: 6,
     usdPrice: 0,
   },
@@ -81,8 +91,8 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     decimals: 6,
     usdprice: 0, 
   },
-
 ]
+
 /** HTML to display to user that they need to accept in order to continue */
 export const TOS_HTML = `
   <p><b>1. Age Requirement:</b> Must be at least 18 years old.</p>
@@ -95,7 +105,6 @@ export const TOS_HTML = `
   <p><b>8. Data Privacy:</b> Your privacy is important to us.</p>
   <p><b>9. Responsible Gaming:</b> Play responsibly; seek help if needed.</p>
 `
-
 
 /**
  * A method for automatically fetching Token Metadata.
