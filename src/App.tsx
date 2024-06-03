@@ -11,7 +11,7 @@ import Game from './sections/Game/Game'
 import Header from './sections/Header'
 import RecentPlays from './sections/RecentPlays/RecentPlays'
 import Toasts from './sections/Toasts'
-import { MainWrapper, TosInner, TosWrapper } from './styles.ts'
+import { MainWrapper, TosInner, TosWrapper } from './styles'
 import { TOS_HTML } from './constants'
 
 function ScrollToTop() {
