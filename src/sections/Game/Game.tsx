@@ -7,7 +7,7 @@ import { GAMES } from '../../games'
 import { useUserStore } from '../../hooks/useUserStore'
 import { GameSlider } from '../Dashboard/Dashboard'
 import { Container, Controls, IconButton, MetaControls, Screen, Splash } from './Game.styles'
-import { LoadingBar } from './LoadingBar.tsx'
+import { LoadingBar } from './LoadingBar'
 import { ProvablyFairModal } from './ProvablyFairModal'
 // import { TransactionModal } from './TransactionModal'
 
