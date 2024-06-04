@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { EXPLORER_URL } from '../../constants'
 
 const Buttons = styled.div`
   overflow: hidden;
@@ -101,24 +100,24 @@ const Welcome = styled.div`
 
 export function WelcomeBanner() {
   return (
-        <Welcome>
-          <div>
-            <h1>Welcome to YKD games ran with Gamba v2 👋</h1>
-            <p>
-              A fair, simple and decentralized casino on Solana.
-            </p>
-          </div>
-          <Buttons>
-            <button onClick={() => window.open('https://v2.gamba.so/', '_blank')}>
-              🚀 Add Liqudity
-            </button>
-            <button onClick={() => window.open('https://github.com/gamba-labs/gamba', '_blank')}>
-              👨‍💻 Build your own
-            </button>
-            <button onClick={() => window.open('https://discord.gg/dS2zhYXMNy', '_blank')}>
-              💬 Discord 
-            </button>
-          </Buttons>
-        </Welcome>
+    <Welcome>
+      <div>
+        <h1>Welcome to YKD Games 👋</h1>
+        <p>
+          A fair, simple and decentralized casino on Solana.
+        </p>
+      </div>
+      <Buttons>
+        <button onClick={() => window.open('https://x.com/YonderKidDream', '_blank')}>
+          Twitter
+        </button>
+        <button onClick={() => window.open('https://t.me/YKDBYJKOfficial', '_blank')}>
+          Telegram
+        </button>
+        <button onClick={() => window.open('https://discord.gg/vAzwdgHzr2', '_blank')}>
+           Discord
+        </button>
+      </Buttons>
+    </Welcome>
   )
 }
