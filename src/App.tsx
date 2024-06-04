@@ -3,7 +3,7 @@ import { useTransactionError } from 'gamba-react-v2'
 import React from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { Modal } from './components/Modal'
-//import { StyledSection } from './components/Slider'
+import { SlideSection } from './components/Slider'
 import { useToast } from './hooks/useToast'
 import Dashboard from './sections/Dashboard/Dashboard'
 import Game from './sections/Game/Game'
@@ -61,7 +61,7 @@ export default function App() {
               <p><b>3. Risk Acknowledgement:</b> Games involve risk; no guaranteed winnings.</p>
               <p><b>4. No Warranty:</b> Games provided "as is"; operate randomly.</p>
               <p><b>5. Limitation of Liability:</b> We're not liable for damages.</p>
-              <p><b>6. Licensing Disclaimer:</b> Not a licensed casino;.</p>
+              <p><b>6. Licensing Disclaimer:</b> Not a licensed casino;</p>
               <p><b>7. Fair Play:</b> Games are conducted fairly and transparently.</p>
               <p><b>8. Data Privacy:</b> Your privacy is important to us.</p>
               <p><b>9. Responsible Gaming:</b> Play responsibly; seek help if needed.</p>
@@ -80,14 +80,14 @@ export default function App() {
       <ErrorHandler />
       <Header />
       <Toasts />
-      <StyledSection>
+      <SlideSection>
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/:gameId" element={<Game />} />
         </Routes>
         <h2 style={{ textAlign: 'center' }}>Recent Plays</h2>
         <RecentPlays />
-      </StyledSection>
+      </SlideSection>
     </>
   )
 }
