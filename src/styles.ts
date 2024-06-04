@@ -19,6 +19,7 @@ export const MainWrapper = styled.div`
     padding: 20px;
     width: 1100px;
   }
+  z-index:5;
 `
 
 export const TosWrapper = styled.div`
@@ -32,6 +33,7 @@ export const TosWrapper = styled.div`
     position: absolute;
     bottom: 0px;
     left: 0px;
+    z-index:5;
   }
 `
 
@@ -40,4 +42,6 @@ export const TosInner = styled.div`
   padding: 10px;
   overflow: auto;
   position: relative;
+  z-index:5;
+
 `
